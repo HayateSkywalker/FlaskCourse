@@ -1,0 +1,19 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Flask Blog</title>
+</head>
+<body>
+    <h1>
+        Hello 
+        {% if myname and myname!='hayate' %}
+        {{ myname }}
+        {%elif myname== 'hayate' %}
+        Ζαχαρίας
+        {% else%}
+        everyone
+        {% endif %} 
+        from this template
+    </h1>
+</body>    
+</html>

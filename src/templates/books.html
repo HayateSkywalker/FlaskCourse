@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Books</title>
+</head>
+<body>
+
+<ul>
+{% for book in jdict %}
+
+
+
+    <li>
+        Τίτλος: {{book.title | title}} <br>
+        Συγγραφέας: {{book.author | safe}} <br>
+        Χρονιά: {{book.year_written}} <br>
+        Έκδοση: {{book.edition}} <br>
+        Τιμή: {{book.price}} €<br>
+    </li>
+  <br>
+
+{% endfor %}
+</ul>
+</body>
+</html>
